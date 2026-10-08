@@ -77,7 +77,14 @@
 											<h3>A Closer Look: Canopy Height in Chur</h3>
 											<p>The 1 m canopy height model behind the analysis. Forests on the valley slopes reach 20 to 35 m, while the Rhine valley floor and the alpine area above the tree line stay near 0 m. This is why canopy cover is only 42 % in Chur.</p>
 											<p class="meta">Data: Vegetationshöhenmodell LFI 2025 (WSL/BAFU) · Tools: Python, rasterio, Matplotlib</p>
-										</div>						
+										</div>	
+										<div class="col-8 col-12-medium project">
+											<iframe src="maps/umweltinfo_spatial_check.html" title="Interactive map of umwelt.info search results for forest data in Brandenburg" style="width:100%; height:400px; border:0;" loading="lazy"></iframe>
+											<h3>Can You Trust the Location? Checking umwelt.info Search Results</h3>
+											<p>When you search the federal environmental data portal umwelt.info for forest data in Brandenburg, do the results really lie in Brandenburg? A Python workflow downloads 200 search results from the umwelt.info API, draws the bounding box of each dataset and compares it with the state boundary. About two thirds lie in Brandenburg, one in four lies near it (mostly Berlin and map sheets on the border), and 13 lie somewhere else.</p>
+											<p class="meta">Data: umwelt.info API, VG250 and TopPlusOpen (BKG) · Tools: Python, GeoPandas, Shapely, Folium</p>
+											<p class="meta"><a href="maps/umweltinfo_spatial_check.html">Open full map →</a> · <a href="https://github.com/gomesgogit/umweltinfo-spatial-check">Code on GitHub →</a></p>
+										</div>
 
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p1.jpg" class="image fit"><img src="images/p1.jpg" alt="LiDAR sun exposure simulation on roofs in Warsaw"></a>
@@ -85,64 +92,68 @@
 											<p>Using a LiDAR point cloud, sun exposure was simulated over 24 hours. The roofs that receive the most hours of light are the best candidates for installing solar panels.</p>
 											<p class="meta">Data: Geoportal Poland, Warsaw (private project) · Tools: ArcGIS, CloudCompare</p>
 										</div>
-
+										
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p4.JPG" class="image fit"><img src="images/p4.JPG" alt="Map of CO2 emissions from forest fires in northern Brazil"></a>
 											<h3>CO₂ Emissions from Forest Fires in Brazil </h3>
 											<p>How much CO₂ did forest fires release in Brazil in 2018, and where? This map shows the emissions in the northern region, revealing where fires had the biggest climate impact.</p>
 											<p class="meta">Data: Global Forest Watch (GFW) · Tools: Python, NumPy, Pandas,Jupyter Notebook, Folium</p>
 										</div>
-
+																			
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p5.JPG" class="image fit"><img src="images/p5.JPG" alt="Drone photogrammetry map of a forest regeneration area in Poland"></a>
 											<h3>Counting Young Trees from the Air</h3>
 											<p>Photogrammetry from DJI Phantom 4 drone images of a forest regeneration area. The result supports counting the newly planted nursery trees.</p>
 											<p class="meta">Private project, Poland · Tools: Pix4D, ArcGIS</p>
 										</div>
-
+										<!--
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p2.jpg" class="image fit"><img src="images/p2.jpg" alt="Map of Ibirapuera Park with location, scale and 3D views"></a>
 											<h3>Ibirapuera Park Map Project</h3>
 											<p> Map generated based on Google Map image. Goal was to create a map for walkers to navate trought the park. This map combines coordinates and distance scale. The 3D view was creaded based on the 2D map. </p>
 											<p class="meta">Data: Google Maps, Google Earth · Tools: ArcGIS</p>
 										</div>
-
-										
+										-->
+										<!--
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p6.png" class="image fit"><img src="images/p6.png" alt="NDVI map of a university campus from drone images, Thailand"></a>
 											<h3>Finding the Cool Spots on Campus</h3>
 											<p>Drone photogrammetry and NDVI analysis of a university campus, comparing green areas with non-vegetated surfaces. The goal is to identify cooling areas and heat zones across the campus.</p>
 											<p class="meta">Private project, Thailand · Tools: DJI Phantom 4, DJI flight planning, Pix4D</p>
 										</div>
-
-									
+										-->
+									    <!--
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p7.JPG" class="image fit"><img src="images/p7.JPG" alt="Analysis mask built in Google Earth Engine"></a>
 											<h3>What Is Around? Custom Analysis Masks</h3>
 											<p>How do you find out what is around an area? By building an analysis mask from exactly the information you want to know, the result shows only what matters.</p>
 											<p class="meta">Data and tools: Google Earth Engine</p>
 										</div>
-
+										-->
+										
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p12.JPG" class="image fit"><img src="images/p12.JPG" alt="Terrain elevation prediction grid created in R"></a>
 											<h3>Modelling Terrain Change with R</h3>
 											<p>How can the elevation or terrain of an area change? A prediction grid in R helps to understand and visualize how the area changes.</p>
 											<p class="meta">Private project · Tools: R with multiple packages</p>
 										</div>
-
+										
+										<!--
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p11.JPG" class="image fit"><img src="images/p11.JPG" alt="GPS tracks of wolves around a nature reserve and a city"></a>
 											<h3>Tracking Wolves Around a Nature Reserve</h3>
 											<p>How do wolves move around a nature reserve? GPS tracks carried by some of the animals show where they spend most of their time. The nature reserve is shown in red and the city in blue.</p>
 											<p class="meta">Data: Movebank · Tools: Python, NumPy, Pandas, Jupyter Notebook, Folium</p>
 										</div>
-
+										-->
+                                        <!--
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p8.JPG" class="image fit"><img src="images/p8.JPG" alt="Image composite and mosaic in Google Earth Engine"></a>
 											<h3>Image Compositing and Mosaicking</h3>
 											<p>How do different images come together? Same projection? Different days or years? An example of image compositing and mosaicking in Google Earth Engine.</p>
 											<p class="meta">Data: open data in Google Earth Engine · Tools: Google Earth Engine, Google Maps</p>
 										</div>
+										-->
 
 										<div class="col-4 col-6-medium col-12-small project">
 											<a href="images/p10.PNG" class="image fit"><img src="images/p10.PNG" alt="LiDAR point cloud of city trees near buildings, visualized in R"></a>
