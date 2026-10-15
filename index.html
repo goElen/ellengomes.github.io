@@ -65,7 +65,20 @@
 								</p>
 								
 								<section>
-									<div class="row"> 	
+									<div class="row"> 
+
+										<div class="col-8 col-12-medium project">
+											<a href="images/fraction_maps_enmap.png" class="image fit"><img src="images/fraction_maps_enmap.png" alt="EnMAP fraction maps of Potsdam: impervious, vegetation, soil and water"></a>
+											<h3>How Green Is Potsdam? Land Cover Fractions from EnMAP</h3>
+											<p>How much of each 30 m pixel is vegetation, sealed surface, soil or water? Regression-based unmixing of a real EnMAP hyperspectral scene of Potsdam, trained on synthetically mixed spectra with a Random Forest and validated against a 1 m aerial reference. After a band quality check, 185 of 224 bands were kept. Vegetation and sealed surfaces are mapped with a mean error of about 15 percentage points, water with 4.</p>
+											<p class="meta">Data: EnMAP L2A (DLR), land cover reference from the EnMAP-Box example data · Tools: Python, rasterio, scikit-learn, NumPy · Contains modified EnMAP data © DLR 2022 · <a href="https://github.com/gomesgogit/enmap-urban-fractions-potsdam" target="_blank">Code on GitHub →</a></p>
+										</div>
+										<div class="col-4 col-12-medium project">
+											<a href="images/final_test_scatter_enmap.png" class="image fit"><img src="images/final_test_scatter_enmap.png" alt="Predicted versus reference fractions on the final test set"></a>
+											<h3>EnMAP or Sentinel-2?</h3>
+											<p>Is the hyperspectral sensor better? Trained on the same synthetic mixtures, simulated Sentinel-2 performs almost equally for these four broad classes. The reference date (2019 vs 2022), rare soil and shadows limit the accuracy more than the number of bands. The plot shows predicted against reference fractions for 1,806 test pixels.</p>
+											<p class="meta">Tools: Python, scikit-learn, Matplotlib</p>
+										</div>
 										
 										<div class="col-8 col-12-medium project">
 										    <iframe src="maps/forest_indicators_gr.html" width="100%" height="400" style="border:0; margin-bottom:0.8em;" loading="lazy" title="Interactive map of forest indicators in Graubünden"></iframe>
